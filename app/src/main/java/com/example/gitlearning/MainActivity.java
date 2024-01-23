@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText name,age;
@@ -22,7 +23,7 @@ Button submit;
             submit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    tv.setText("name: "+ name + " " + "age: "+age );
+                    Toast.makeText(MainActivity.this, "name and age stored succesfully.", Toast.LENGTH_SHORT).show();
                 }
             });
     }
