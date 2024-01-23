@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 EditText name,age;
 Button submit;
+TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +19,7 @@ Button submit;
             name=findViewById(R.id.name);
             age=findViewById(R.id.age);
             submit=findViewById(R.id.submit);
-
-
+            tv=findViewById(R.id.tv);
             submit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
