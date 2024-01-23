@@ -23,11 +23,24 @@
         android:layout_below="@id/name"
         android:hint="Enter age"
         />
+
     <Button
+        android:id="@+id/submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/age"
-        android:layout_margin="10dp"
-        android:id="@+id/submit"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name and age"
+        android:id="@+id/tv"
+        android:layout_below="@+id/submit"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        />
 </RelativeLayout>
